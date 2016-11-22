@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="File" representedClassName="CoreDLNAFile" syncable="YES">
+        <attribute name="class_type" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id_" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="resources" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Resource" inverseName="file" inverseEntity="Resource" syncable="YES"/>
+        <relationship name="server" maxCount="1" deletionRule="Nullify" destinationEntity="Server" inverseName="files" inverseEntity="Server" syncable="YES"/>
+    </entity>
+    <entity name="Resource" syncable="YES">
+        <attribute name="orderNum" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="protocolInfo" attributeType="String" syncable="YES"/>
+        <attribute name="resolution" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="size" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uri" attributeType="String" syncable="YES"/>
+        <relationship name="file" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="File" inverseName="resources" inverseEntity="File" syncable="YES"/>
+    </entity>
+    <entity name="Server" representedClassName="CoreDLNAServer" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="files" toMany="YES" deletionRule="Cascade" destinationEntity="File" inverseName="server" inverseEntity="File" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="File" positionX="180" positionY="-46" width="128" height="133"/>
+        <element name="Resource" positionX="63" positionY="36" width="128" height="133"/>
+        <element name="Server" positionX="-54" positionY="63" width="128" height="73"/>
+    </elements>
+</model>
