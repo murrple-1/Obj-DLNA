@@ -7,90 +7,896 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E98A7134195B0AE00004D99B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A7133195B0AE00004D99B /* Foundation.framework */; };
+		E91CF03B1937E5AE00F4A457 /* httpparser.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83771192519DA0002C09B /* httpparser.c */; };
+		E91CF03C1937E5AE00F4A457 /* sysdep.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B1192519DA0002C09B /* sysdep.c */; };
+		E91CF03D1937E5AE00F4A457 /* element.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83736192519DA0002C09B /* element.c */; };
+		E91CF03E1937E5AE00F4A457 /* win_dll.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B3192519DA0002C09B /* win_dll.c */; };
+		E91CF03F1937E5AE00F4A457 /* miniserver.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8376E192519DA0002C09B /* miniserver.c */; };
+		E91CF0411937E5AE00F4A457 /* nodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83740192519DA0002C09B /* nodeList.c */; };
+		E91CF0431937E5AE00F4A457 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B0192519DA0002C09B /* md5.c */; };
+		E91CF0441937E5AE00F4A457 /* UpnpString.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83764192519DA0002C09B /* UpnpString.c */; };
+		E91CF0451937E5AE00F4A457 /* ixmlparser.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373D192519DA0002C09B /* ixmlparser.c */; };
+		E91CF0461937E5AE00F4A457 /* httpreadwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83772192519DA0002C09B /* httpreadwrite.c */; };
+		E91CF0471937E5AE00F4A457 /* uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B2192519DA0002C09B /* uuid.c */; };
+		E91CF0491937E5AE00F4A457 /* sock.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83776192519DA0002C09B /* sock.c */; };
+		E91CF04B1937E5AE00F4A457 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377F192519DA0002C09B /* util.c */; };
+		E91CF04C1937E5AE00F4A457 /* ssdp_ctrlpt.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A9192519DA0002C09B /* ssdp_ctrlpt.c */; };
+		E91CF04F1937E5AE00F4A457 /* membuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377C192519DA0002C09B /* membuffer.c */; };
+		E91CF0501937E5AE00F4A457 /* statcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83774192519DA0002C09B /* statcodes.c */; };
+		E91CF0511937E5AE00F4A457 /* ixml.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373A192519DA0002C09B /* ixml.c */; };
+		E91CF0521937E5AE00F4A457 /* ixmlmembuf.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373C192519DA0002C09B /* ixmlmembuf.c */; };
+		E91CF0531937E5AE00F4A457 /* urlconfig.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837AE192519DA0002C09B /* urlconfig.c */; };
+		E91CF0541937E5AE00F4A457 /* namedNodeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373E192519DA0002C09B /* namedNodeMap.c */; };
+		E91CF0561937E5AE00F4A457 /* CoreDLNAServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E93880C1192BD21A004D265F /* CoreDLNAServer.m */; };
+		E91CF0571937E5AE00F4A457 /* ssdp_server.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837AC192519DA0002C09B /* ssdp_server.c */; };
+		E91CF0581937E5AE00F4A457 /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373F192519DA0002C09B /* node.c */; };
+		E91CF0591937E5AE00F4A457 /* attr.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83734192519DA0002C09B /* attr.c */; };
+		E91CF05B1937E5AE00F4A457 /* strintmap.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377D192519DA0002C09B /* strintmap.c */; };
+		E91CF05C1937E5AE00F4A457 /* CoreDLNAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E93880BB192BD050004D265F /* CoreDLNAFile.m */; };
+		E91CF05D1937E5AE00F4A457 /* FreeList.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374A192519DA0002C09B /* FreeList.c */; };
+		E91CF05E1937E5AE00F4A457 /* soap_ctrlpt.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A6192519DA0002C09B /* soap_ctrlpt.c */; };
+		E91CF05F1937E5AE00F4A457 /* Obj-DLNAWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9598FB219265D95004CFD29 /* Obj-DLNAWrapper.m */; };
+		E91CF0601937E5AE00F4A457 /* upnpdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83763192519DA0002C09B /* upnpdebug.c */; };
+		E91CF0611937E5AE00F4A457 /* uri.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83778192519DA0002C09B /* uri.c */; };
+		E91CF0621937E5AE00F4A457 /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374B192519DA0002C09B /* LinkedList.c */; };
+		E91CF0631937E5AE00F4A457 /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83735192519DA0002C09B /* document.c */; };
+		E91CF0641937E5AE00F4A457 /* inet_pton.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A3192519DA0002C09B /* inet_pton.c */; };
+		E91CF0651937E5AE00F4A457 /* client_table.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8376C192519DA0002C09B /* client_table.c */; };
+		E91CF0661937E5AE00F4A457 /* gena_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83769192519DA0002C09B /* gena_device.c */; };
+		E91CF0671937E5AE00F4A457 /* gena_callback2.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83767192519DA0002C09B /* gena_callback2.c */; };
+		E91CF0681937E5AE00F4A457 /* webserver.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83775192519DA0002C09B /* webserver.c */; };
+		E91CF06C1937E5AE00F4A457 /* ssdp_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837AA192519DA0002C09B /* ssdp_device.c */; };
+		E91CF06D1937E5AE00F4A457 /* upnpapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83762192519DA0002C09B /* upnpapi.c */; };
+		E91CF06E1937E5AE00F4A457 /* parsetools.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83773192519DA0002C09B /* parsetools.c */; };
+		E91CF0711937E5AE00F4A457 /* upnp_timeout.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377E192519DA0002C09B /* upnp_timeout.c */; };
+		E91CF0721937E5AE00F4A457 /* TimerThread.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374D192519DA0002C09B /* TimerThread.c */; };
+		E91CF0731937E5AE00F4A457 /* service_table.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377A192519DA0002C09B /* service_table.c */; };
+		E91CF0741937E5AE00F4A457 /* DLNAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E95AF163192697DA0043B72B /* DLNAManager.m */; };
+		E91CF0761937E5AE00F4A457 /* soap_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A7192519DA0002C09B /* soap_device.c */; };
+		E91CF0791937E5AE00F4A457 /* ixmldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373B192519DA0002C09B /* ixmldebug.c */; };
+		E91CF07A1937E5AE00F4A457 /* ThreadPool.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374C192519DA0002C09B /* ThreadPool.c */; };
+		E91CF07B1937E5AE00F4A457 /* upnptools.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83765192519DA0002C09B /* upnptools.c */; };
+		E91CF07C1937E5AE00F4A457 /* gena_ctrlpt.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83768192519DA0002C09B /* gena_ctrlpt.c */; };
+		E91CF07D1937E5AE00F4A457 /* soap_common.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A5192519DA0002C09B /* soap_common.c */; };
+		E91CF07F1937E5AE00F4A457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D832791924F68A0002C09B /* Foundation.framework */; };
+		E92865D3193921AB0007F536 /* DLNAServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E92865D0193921AB0007F536 /* DLNAServer.m */; };
+		E92865D4193921AB0007F536 /* DLNAServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E92865D0193921AB0007F536 /* DLNAServer.m */; };
+		E92865D9193921BD0007F536 /* DLNAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E92865D6193921BD0007F536 /* DLNAFile.m */; };
+		E92865DA193921BD0007F536 /* DLNAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E92865D6193921BD0007F536 /* DLNAFile.m */; };
+		E93880BD192BD050004D265F /* CoreDLNAFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E93880BB192BD050004D265F /* CoreDLNAFile.m */; };
+		E93880C3192BD21A004D265F /* CoreDLNAServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E93880C1192BD21A004D265F /* CoreDLNAServer.m */; };
+		E944D8EF19352ADD00875C94 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E944D8EE19352ADD00875C94 /* Cocoa.framework */; };
+		E944D8FE19352AE500875C94 /* DLNAModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9246A9C192B9D620048A1E0 /* DLNAModel.xcdatamodeld */; };
+		E9598FB419265D95004CFD29 /* Obj-DLNAWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E9598FB219265D95004CFD29 /* Obj-DLNAWrapper.m */; };
+		E95AF165192697DA0043B72B /* DLNAManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E95AF163192697DA0043B72B /* DLNAManager.m */; };
+		E97C1CD81E038F1C00A48742 /* content_dir.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CB11E038F1C00A48742 /* content_dir.c */; };
+		E97C1CD91E038F1C00A48742 /* device_list.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CB31E038F1C00A48742 /* device_list.c */; };
+		E97C1CDA1E038F1C00A48742 /* device.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CB51E038F1C00A48742 /* device.c */; };
+		E97C1CDB1E038F1C00A48742 /* didl_object.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CB71E038F1C00A48742 /* didl_object.c */; };
+		E97C1CDC1E038F1C00A48742 /* objdlna.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CBA1E038F1C00A48742 /* objdlna.c */; };
+		E97C1CDD1E038F1C00A48742 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CBC1E038F1C00A48742 /* log.c */; };
+		E97C1CDE1E038F1C00A48742 /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CBF1E038F1C00A48742 /* object.c */; };
+		E97C1CDF1E038F1C00A48742 /* ptr_array.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CC11E038F1C00A48742 /* ptr_array.c */; };
+		E97C1CE01E038F1C00A48742 /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CC41E038F1C00A48742 /* service.c */; };
+		E97C1CE11E038F1C00A48742 /* string_util.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CC61E038F1C00A48742 /* string_util.c */; };
+		E97C1CE21E038F1C00A48742 /* talloc_util.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CC81E038F1C00A48742 /* talloc_util.c */; };
+		E97C1CE31E038F1C00A48742 /* talloc.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CCA1E038F1C00A48742 /* talloc.c */; };
+		E97C1CE41E038F1C00A48742 /* upnp_util.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CD41E038F1C00A48742 /* upnp_util.c */; };
+		E97C1CE51E038F1C00A48742 /* xml_util.c in Sources */ = {isa = PBXBuildFile; fileRef = E97C1CD61E038F1C00A48742 /* xml_util.c */; };
+		E9C1EA02194108AD007C52A3 /* Obj-DLNAWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9598FB119265D95004CFD29 /* Obj-DLNAWrapper.h */; };
+		E9C1EA03194108AD007C52A3 /* DLNAManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E95AF162192697DA0043B72B /* DLNAManager.h */; };
+		E9C1EA06194108AD007C52A3 /* DLNAServer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E92865CF193921AB0007F536 /* DLNAServer.h */; };
+		E9C1EA07194108AD007C52A3 /* DLNAFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E92865D5193921BD0007F536 /* DLNAFile.h */; };
+		E9C1EA0919410926007C52A3 /* Obj-DLNAWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9598FB119265D95004CFD29 /* Obj-DLNAWrapper.h */; };
+		E9C1EA0A19410926007C52A3 /* DLNAManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E95AF162192697DA0043B72B /* DLNAManager.h */; };
+		E9C1EA0D19410926007C52A3 /* DLNAServer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E92865CF193921AB0007F536 /* DLNAServer.h */; };
+		E9C1EA0E19410926007C52A3 /* DLNAFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E92865D5193921BD0007F536 /* DLNAFile.h */; };
+		E9D8327A1924F68A0002C09B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D832791924F68A0002C09B /* Foundation.framework */; };
+		E9D837B5192519DA0002C09B /* attr.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83734192519DA0002C09B /* attr.c */; };
+		E9D837B6192519DA0002C09B /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83735192519DA0002C09B /* document.c */; };
+		E9D837B7192519DA0002C09B /* element.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83736192519DA0002C09B /* element.c */; };
+		E9D837B8192519DA0002C09B /* ixml.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373A192519DA0002C09B /* ixml.c */; };
+		E9D837B9192519DA0002C09B /* ixmldebug.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373B192519DA0002C09B /* ixmldebug.c */; };
+		E9D837BA192519DA0002C09B /* ixmlmembuf.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373C192519DA0002C09B /* ixmlmembuf.c */; };
+		E9D837BB192519DA0002C09B /* ixmlparser.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373D192519DA0002C09B /* ixmlparser.c */; };
+		E9D837BC192519DA0002C09B /* namedNodeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373E192519DA0002C09B /* namedNodeMap.c */; };
+		E9D837BD192519DA0002C09B /* node.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8373F192519DA0002C09B /* node.c */; };
+		E9D837BE192519DA0002C09B /* nodeList.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83740192519DA0002C09B /* nodeList.c */; };
+		E9D837BF192519DA0002C09B /* FreeList.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374A192519DA0002C09B /* FreeList.c */; };
+		E9D837C0192519DA0002C09B /* LinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374B192519DA0002C09B /* LinkedList.c */; };
+		E9D837C1192519DA0002C09B /* ThreadPool.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374C192519DA0002C09B /* ThreadPool.c */; };
+		E9D837C2192519DA0002C09B /* TimerThread.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8374D192519DA0002C09B /* TimerThread.c */; };
+		E9D837C3192519DA0002C09B /* upnpapi.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83762192519DA0002C09B /* upnpapi.c */; };
+		E9D837C4192519DA0002C09B /* upnpdebug.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83763192519DA0002C09B /* upnpdebug.c */; };
+		E9D837C5192519DA0002C09B /* UpnpString.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83764192519DA0002C09B /* UpnpString.c */; };
+		E9D837C6192519DA0002C09B /* upnptools.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83765192519DA0002C09B /* upnptools.c */; };
+		E9D837C7192519DA0002C09B /* gena_callback2.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83767192519DA0002C09B /* gena_callback2.c */; };
+		E9D837C8192519DA0002C09B /* gena_ctrlpt.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83768192519DA0002C09B /* gena_ctrlpt.c */; };
+		E9D837C9192519DA0002C09B /* gena_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83769192519DA0002C09B /* gena_device.c */; };
+		E9D837CA192519DA0002C09B /* client_table.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8376C192519DA0002C09B /* client_table.c */; };
+		E9D837CB192519DA0002C09B /* miniserver.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8376E192519DA0002C09B /* miniserver.c */; };
+		E9D837CC192519DA0002C09B /* httpparser.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83771192519DA0002C09B /* httpparser.c */; };
+		E9D837CD192519DA0002C09B /* httpreadwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83772192519DA0002C09B /* httpreadwrite.c */; };
+		E9D837CE192519DA0002C09B /* parsetools.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83773192519DA0002C09B /* parsetools.c */; };
+		E9D837CF192519DA0002C09B /* statcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83774192519DA0002C09B /* statcodes.c */; };
+		E9D837D0192519DA0002C09B /* webserver.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83775192519DA0002C09B /* webserver.c */; };
+		E9D837D1192519DA0002C09B /* sock.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83776192519DA0002C09B /* sock.c */; };
+		E9D837D2192519DA0002C09B /* uri.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D83778192519DA0002C09B /* uri.c */; };
+		E9D837D3192519DA0002C09B /* service_table.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377A192519DA0002C09B /* service_table.c */; };
+		E9D837D4192519DA0002C09B /* membuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377C192519DA0002C09B /* membuffer.c */; };
+		E9D837D5192519DA0002C09B /* strintmap.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377D192519DA0002C09B /* strintmap.c */; };
+		E9D837D6192519DA0002C09B /* upnp_timeout.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377E192519DA0002C09B /* upnp_timeout.c */; };
+		E9D837D7192519DA0002C09B /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D8377F192519DA0002C09B /* util.c */; };
+		E9D837D8192519DA0002C09B /* inet_pton.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A3192519DA0002C09B /* inet_pton.c */; };
+		E9D837D9192519DA0002C09B /* soap_common.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A5192519DA0002C09B /* soap_common.c */; };
+		E9D837DA192519DA0002C09B /* soap_ctrlpt.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A6192519DA0002C09B /* soap_ctrlpt.c */; };
+		E9D837DB192519DA0002C09B /* soap_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A7192519DA0002C09B /* soap_device.c */; };
+		E9D837DC192519DA0002C09B /* ssdp_ctrlpt.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837A9192519DA0002C09B /* ssdp_ctrlpt.c */; };
+		E9D837DD192519DA0002C09B /* ssdp_device.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837AA192519DA0002C09B /* ssdp_device.c */; };
+		E9D837DE192519DA0002C09B /* ssdp_server.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837AC192519DA0002C09B /* ssdp_server.c */; };
+		E9D837DF192519DA0002C09B /* urlconfig.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837AE192519DA0002C09B /* urlconfig.c */; };
+		E9D837E0192519DA0002C09B /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B0192519DA0002C09B /* md5.c */; };
+		E9D837E1192519DA0002C09B /* sysdep.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B1192519DA0002C09B /* sysdep.c */; };
+		E9D837E2192519DA0002C09B /* uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B2192519DA0002C09B /* uuid.c */; };
+		E9D837E3192519DA0002C09B /* win_dll.c in Sources */ = {isa = PBXBuildFile; fileRef = E9D837B3192519DA0002C09B /* win_dll.c */; };
+		E9EE9E03194A033D00A0C52D /* DLNAResource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9F0B9551949F6D300247482 /* DLNAResource.h */; };
+		E9EE9E04194A034C00A0C52D /* DLNAResource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9F0B9551949F6D300247482 /* DLNAResource.h */; };
+		E9F0B9531949F6A000247482 /* CoreDLNAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0B9521949F6A000247482 /* CoreDLNAResource.m */; };
+		E9F0B9541949F6A000247482 /* CoreDLNAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0B9521949F6A000247482 /* CoreDLNAResource.m */; };
+		E9F0B9571949F6D300247482 /* DLNAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0B9561949F6D300247482 /* DLNAResource.m */; };
+		E9F0B9581949F6D300247482 /* DLNAResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F0B9561949F6D300247482 /* DLNAResource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E98A712E195B0AE00004D99B /* CopyFiles */ = {
+		E91CF0801937E5AE00F4A457 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				E9EE9E04194A034C00A0C52D /* DLNAResource.h in CopyFiles */,
+				E9C1EA02194108AD007C52A3 /* Obj-DLNAWrapper.h in CopyFiles */,
+				E9C1EA03194108AD007C52A3 /* DLNAManager.h in CopyFiles */,
+				E9C1EA06194108AD007C52A3 /* DLNAServer.h in CopyFiles */,
+				E9C1EA07194108AD007C52A3 /* DLNAFile.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D832741924F68A0002C09B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E9EE9E03194A033D00A0C52D /* DLNAResource.h in CopyFiles */,
+				E9C1EA0919410926007C52A3 /* Obj-DLNAWrapper.h in CopyFiles */,
+				E9C1EA0A19410926007C52A3 /* DLNAManager.h in CopyFiles */,
+				E9C1EA0D19410926007C52A3 /* DLNAServer.h in CopyFiles */,
+				E9C1EA0E19410926007C52A3 /* DLNAFile.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E98A7130195B0AE00004D99B /* libObj-DLNA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObj-DLNA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98A7133195B0AE00004D99B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		E98A7137195B0AE00004D99B /* Obj-DLNA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-DLNA-Prefix.pch"; sourceTree = "<group>"; };
+		E91CF08A1937E5AE00F4A457 /* libObj-DLNA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObj-DLNA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9246A9D192B9D620048A1E0 /* DLNAModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DLNAModel.xcdatamodel; sourceTree = "<group>"; };
+		E92865CF193921AB0007F536 /* DLNAServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAServer.h; sourceTree = "<group>"; };
+		E92865D0193921AB0007F536 /* DLNAServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNAServer.m; sourceTree = "<group>"; };
+		E92865D5193921BD0007F536 /* DLNAFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAFile.h; sourceTree = "<group>"; };
+		E92865D6193921BD0007F536 /* DLNAFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNAFile.m; sourceTree = "<group>"; };
+		E93880B6192BC231004D265F /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		E93880B7192BC231004D265F /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		E93880BA192BD050004D265F /* CoreDLNAFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDLNAFile.h; sourceTree = "<group>"; };
+		E93880BB192BD050004D265F /* CoreDLNAFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDLNAFile.m; sourceTree = "<group>"; };
+		E93880C0192BD21A004D265F /* CoreDLNAServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDLNAServer.h; sourceTree = "<group>"; };
+		E93880C1192BD21A004D265F /* CoreDLNAServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDLNAServer.m; sourceTree = "<group>"; };
+		E944D8ED19352ADD00875C94 /* Obj-DLNAModel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Obj-DLNAModel.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E944D8EE19352ADD00875C94 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		E944D8F119352ADD00875C94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E944D8F219352ADD00875C94 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E944D8F319352ADD00875C94 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E94EC70F194630D9005D3870 /* DLNAManager+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DLNAManager+Private.h"; sourceTree = "<group>"; };
+		E9598FB119265D95004CFD29 /* Obj-DLNAWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Obj-DLNAWrapper.h"; sourceTree = "<group>"; };
+		E9598FB219265D95004CFD29 /* Obj-DLNAWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Obj-DLNAWrapper.m"; sourceTree = "<group>"; };
+		E95AF162192697DA0043B72B /* DLNAManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAManager.h; sourceTree = "<group>"; };
+		E95AF163192697DA0043B72B /* DLNAManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNAManager.m; sourceTree = "<group>"; };
+		E97C1CAF1E038F1C00A48742 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "Obj-DLNA/config.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CB01E038F1C00A48742 /* content_dir_p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = content_dir_p.h; path = "Obj-DLNA/content_dir_p.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CB11E038F1C00A48742 /* content_dir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = content_dir.c; path = "Obj-DLNA/content_dir.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CB21E038F1C00A48742 /* content_dir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = content_dir.h; path = "Obj-DLNA/content_dir.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CB31E038F1C00A48742 /* device_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = device_list.c; path = "Obj-DLNA/device_list.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CB41E038F1C00A48742 /* device_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = device_list.h; path = "Obj-DLNA/device_list.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CB51E038F1C00A48742 /* device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = device.c; path = "Obj-DLNA/device.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CB61E038F1C00A48742 /* device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = device.h; path = "Obj-DLNA/device.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CB71E038F1C00A48742 /* didl_object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = didl_object.c; path = "Obj-DLNA/didl_object.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CB81E038F1C00A48742 /* didl_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = didl_object.h; path = "Obj-DLNA/didl_object.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CB91E038F1C00A48742 /* Obj-DLNA-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Obj-DLNA-Prefix.pch"; path = "Obj-DLNA/Obj-DLNA-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E97C1CBA1E038F1C00A48742 /* objdlna.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = objdlna.c; path = "Obj-DLNA/objdlna.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CBB1E038F1C00A48742 /* objdlna.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = objdlna.h; path = "Obj-DLNA/objdlna.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CBC1E038F1C00A48742 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = log.c; path = "Obj-DLNA/log.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CBD1E038F1C00A48742 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = "Obj-DLNA/log.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CBE1E038F1C00A48742 /* object_p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object_p.h; path = "Obj-DLNA/object_p.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CBF1E038F1C00A48742 /* object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = object.c; path = "Obj-DLNA/object.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CC01E038F1C00A48742 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object.h; path = "Obj-DLNA/object.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CC11E038F1C00A48742 /* ptr_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ptr_array.c; path = "Obj-DLNA/ptr_array.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CC21E038F1C00A48742 /* ptr_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ptr_array.h; path = "Obj-DLNA/ptr_array.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CC31E038F1C00A48742 /* service_p.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = service_p.h; path = "Obj-DLNA/service_p.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CC41E038F1C00A48742 /* service.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = service.c; path = "Obj-DLNA/service.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CC51E038F1C00A48742 /* service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = service.h; path = "Obj-DLNA/service.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CC61E038F1C00A48742 /* string_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = string_util.c; path = "Obj-DLNA/string_util.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CC71E038F1C00A48742 /* string_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = string_util.h; path = "Obj-DLNA/string_util.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CC81E038F1C00A48742 /* talloc_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = talloc_util.c; path = "Obj-DLNA/talloc_util.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CC91E038F1C00A48742 /* talloc_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = talloc_util.h; path = "Obj-DLNA/talloc_util.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CCA1E038F1C00A48742 /* talloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = talloc.c; path = "Obj-DLNA/talloc.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CCB1E038F1C00A48742 /* talloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = talloc.h; path = "Obj-DLNA/talloc.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CCD1E038F1C00A48742 /* autoconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoconfig.h; sourceTree = "<group>"; };
+		E97C1CCE1E038F1C00A48742 /* ithread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ithread.h; sourceTree = "<group>"; };
+		E97C1CCF1E038F1C00A48742 /* ixml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixml.h; sourceTree = "<group>"; };
+		E97C1CD01E038F1C00A48742 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		E97C1CD11E038F1C00A48742 /* upnp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnp.h; sourceTree = "<group>"; };
+		E97C1CD21E038F1C00A48742 /* upnpconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpconfig.h; sourceTree = "<group>"; };
+		E97C1CD31E038F1C00A48742 /* upnptools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnptools.h; sourceTree = "<group>"; };
+		E97C1CD41E038F1C00A48742 /* upnp_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = upnp_util.c; path = "Obj-DLNA/upnp_util.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CD51E038F1C00A48742 /* upnp_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = upnp_util.h; path = "Obj-DLNA/upnp_util.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CD61E038F1C00A48742 /* xml_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = xml_util.c; path = "Obj-DLNA/xml_util.c"; sourceTree = SOURCE_ROOT; };
+		E97C1CD71E038F1C00A48742 /* xml_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xml_util.h; path = "Obj-DLNA/xml_util.h"; sourceTree = SOURCE_ROOT; };
+		E97C1CE61E038F7300A48742 /* Obj-DLNAModel-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Obj-DLNAModel-Info.plist"; path = "Obj-DLNAModel/Obj-DLNAModel-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E97C1CE71E038F7300A48742 /* Obj-DLNAModel-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Obj-DLNAModel-Prefix.pch"; path = "Obj-DLNAModel/Obj-DLNAModel-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		E9D832761924F68A0002C09B /* libObj-DLNA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libObj-DLNA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D832791924F68A0002C09B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E9D8327D1924F68A0002C09B /* Obj-DLNA-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Obj-DLNA-Prefix.pch"; sourceTree = "<group>"; };
+		E9D83731192519DA0002C09B /* ixml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixml.h; sourceTree = "<group>"; };
+		E9D83732192519DA0002C09B /* ixmldebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixmldebug.h; sourceTree = "<group>"; };
+		E9D83734192519DA0002C09B /* attr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attr.c; sourceTree = "<group>"; };
+		E9D83735192519DA0002C09B /* document.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = document.c; sourceTree = "<group>"; };
+		E9D83736192519DA0002C09B /* element.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = element.c; sourceTree = "<group>"; };
+		E9D83738192519DA0002C09B /* ixmlmembuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixmlmembuf.h; sourceTree = "<group>"; };
+		E9D83739192519DA0002C09B /* ixmlparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ixmlparser.h; sourceTree = "<group>"; };
+		E9D8373A192519DA0002C09B /* ixml.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixml.c; sourceTree = "<group>"; };
+		E9D8373B192519DA0002C09B /* ixmldebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixmldebug.c; sourceTree = "<group>"; };
+		E9D8373C192519DA0002C09B /* ixmlmembuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixmlmembuf.c; sourceTree = "<group>"; };
+		E9D8373D192519DA0002C09B /* ixmlparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ixmlparser.c; sourceTree = "<group>"; };
+		E9D8373E192519DA0002C09B /* namedNodeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = namedNodeMap.c; sourceTree = "<group>"; };
+		E9D8373F192519DA0002C09B /* node.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = node.c; sourceTree = "<group>"; };
+		E9D83740192519DA0002C09B /* nodeList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nodeList.c; sourceTree = "<group>"; };
+		E9D83744192519DA0002C09B /* FreeList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeList.h; sourceTree = "<group>"; };
+		E9D83745192519DA0002C09B /* ithread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ithread.h; sourceTree = "<group>"; };
+		E9D83746192519DA0002C09B /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		E9D83747192519DA0002C09B /* ThreadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadPool.h; sourceTree = "<group>"; };
+		E9D83748192519DA0002C09B /* TimerThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerThread.h; sourceTree = "<group>"; };
+		E9D8374A192519DA0002C09B /* FreeList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FreeList.c; sourceTree = "<group>"; };
+		E9D8374B192519DA0002C09B /* LinkedList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkedList.c; sourceTree = "<group>"; };
+		E9D8374C192519DA0002C09B /* ThreadPool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ThreadPool.c; sourceTree = "<group>"; };
+		E9D8374D192519DA0002C09B /* TimerThread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TimerThread.c; sourceTree = "<group>"; };
+		E9D83751192519DA0002C09B /* upnp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnp.h; sourceTree = "<group>"; };
+		E9D83752192519DA0002C09B /* upnpconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpconfig.h; sourceTree = "<group>"; };
+		E9D83753192519DA0002C09B /* upnpdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpdebug.h; sourceTree = "<group>"; };
+		E9D83754192519DA0002C09B /* UpnpGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpGlobal.h; sourceTree = "<group>"; };
+		E9D83755192519DA0002C09B /* UpnpInet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpInet.h; sourceTree = "<group>"; };
+		E9D83756192519DA0002C09B /* UpnpIntTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpIntTypes.h; sourceTree = "<group>"; };
+		E9D83757192519DA0002C09B /* UpnpStdInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpStdInt.h; sourceTree = "<group>"; };
+		E9D83758192519DA0002C09B /* UpnpString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpString.h; sourceTree = "<group>"; };
+		E9D83759192519DA0002C09B /* upnptools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnptools.h; sourceTree = "<group>"; };
+		E9D8375A192519DA0002C09B /* UpnpUniStd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpnpUniStd.h; sourceTree = "<group>"; };
+		E9D83762192519DA0002C09B /* upnpapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upnpapi.c; sourceTree = "<group>"; };
+		E9D83763192519DA0002C09B /* upnpdebug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upnpdebug.c; sourceTree = "<group>"; };
+		E9D83764192519DA0002C09B /* UpnpString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = UpnpString.c; sourceTree = "<group>"; };
+		E9D83765192519DA0002C09B /* upnptools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upnptools.c; sourceTree = "<group>"; };
+		E9D83767192519DA0002C09B /* gena_callback2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gena_callback2.c; sourceTree = "<group>"; };
+		E9D83768192519DA0002C09B /* gena_ctrlpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gena_ctrlpt.c; sourceTree = "<group>"; };
+		E9D83769192519DA0002C09B /* gena_device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gena_device.c; sourceTree = "<group>"; };
+		E9D8376C192519DA0002C09B /* client_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client_table.c; sourceTree = "<group>"; };
+		E9D8376E192519DA0002C09B /* miniserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = miniserver.c; sourceTree = "<group>"; };
+		E9D83771192519DA0002C09B /* httpparser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = httpparser.c; sourceTree = "<group>"; };
+		E9D83772192519DA0002C09B /* httpreadwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = httpreadwrite.c; sourceTree = "<group>"; };
+		E9D83773192519DA0002C09B /* parsetools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parsetools.c; sourceTree = "<group>"; };
+		E9D83774192519DA0002C09B /* statcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = statcodes.c; sourceTree = "<group>"; };
+		E9D83775192519DA0002C09B /* webserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = webserver.c; sourceTree = "<group>"; };
+		E9D83776192519DA0002C09B /* sock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sock.c; sourceTree = "<group>"; };
+		E9D83778192519DA0002C09B /* uri.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uri.c; sourceTree = "<group>"; };
+		E9D8377A192519DA0002C09B /* service_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = service_table.c; sourceTree = "<group>"; };
+		E9D8377C192519DA0002C09B /* membuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = membuffer.c; sourceTree = "<group>"; };
+		E9D8377D192519DA0002C09B /* strintmap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strintmap.c; sourceTree = "<group>"; };
+		E9D8377E192519DA0002C09B /* upnp_timeout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = upnp_timeout.c; sourceTree = "<group>"; };
+		E9D8377F192519DA0002C09B /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		E9D83781192519DA0002C09B /* autoconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autoconfig.h; sourceTree = "<group>"; };
+		E9D83782192519DA0002C09B /* client_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_table.h; sourceTree = "<group>"; };
+		E9D83783192519DA0002C09B /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		E9D83784192519DA0002C09B /* gena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gena.h; sourceTree = "<group>"; };
+		E9D83785192519DA0002C09B /* gena_ctrlpt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gena_ctrlpt.h; sourceTree = "<group>"; };
+		E9D83786192519DA0002C09B /* gena_device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gena_device.h; sourceTree = "<group>"; };
+		E9D83787192519DA0002C09B /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		E9D83788192519DA0002C09B /* gmtdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gmtdate.h; sourceTree = "<group>"; };
+		E9D83789192519DA0002C09B /* httpparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpparser.h; sourceTree = "<group>"; };
+		E9D8378A192519DA0002C09B /* httpreadwrite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = httpreadwrite.h; sourceTree = "<group>"; };
+		E9D8378B192519DA0002C09B /* inet_pton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inet_pton.h; sourceTree = "<group>"; };
+		E9D8378C192519DA0002C09B /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		E9D8378D192519DA0002C09B /* membuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = membuffer.h; sourceTree = "<group>"; };
+		E9D8378E192519DA0002C09B /* miniserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = miniserver.h; sourceTree = "<group>"; };
+		E9D8378F192519DA0002C09B /* netall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netall.h; sourceTree = "<group>"; };
+		E9D83790192519DA0002C09B /* parsetools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parsetools.h; sourceTree = "<group>"; };
+		E9D83791192519DA0002C09B /* server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = server.h; sourceTree = "<group>"; };
+		E9D83792192519DA0002C09B /* service_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = service_table.h; sourceTree = "<group>"; };
+		E9D83793192519DA0002C09B /* soaplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soaplib.h; sourceTree = "<group>"; };
+		E9D83794192519DA0002C09B /* sock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sock.h; sourceTree = "<group>"; };
+		E9D83795192519DA0002C09B /* ssdplib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssdplib.h; sourceTree = "<group>"; };
+		E9D83796192519DA0002C09B /* statcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statcodes.h; sourceTree = "<group>"; };
+		E9D83797192519DA0002C09B /* statuscodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statuscodes.h; sourceTree = "<group>"; };
+		E9D83798192519DA0002C09B /* strintmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strintmap.h; sourceTree = "<group>"; };
+		E9D83799192519DA0002C09B /* sysdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdep.h; sourceTree = "<group>"; };
+		E9D8379A192519DA0002C09B /* unixutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unixutil.h; sourceTree = "<group>"; };
+		E9D8379B192519DA0002C09B /* upnp_timeout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnp_timeout.h; sourceTree = "<group>"; };
+		E9D8379C192519DA0002C09B /* upnpapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnpapi.h; sourceTree = "<group>"; };
+		E9D8379D192519DA0002C09B /* upnputil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = upnputil.h; sourceTree = "<group>"; };
+		E9D8379E192519DA0002C09B /* uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uri.h; sourceTree = "<group>"; };
+		E9D8379F192519DA0002C09B /* urlconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = urlconfig.h; sourceTree = "<group>"; };
+		E9D837A0192519DA0002C09B /* uuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uuid.h; sourceTree = "<group>"; };
+		E9D837A1192519DA0002C09B /* VirtualDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualDir.h; sourceTree = "<group>"; };
+		E9D837A2192519DA0002C09B /* webserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webserver.h; sourceTree = "<group>"; };
+		E9D837A3192519DA0002C09B /* inet_pton.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inet_pton.c; sourceTree = "<group>"; };
+		E9D837A5192519DA0002C09B /* soap_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = soap_common.c; sourceTree = "<group>"; };
+		E9D837A6192519DA0002C09B /* soap_ctrlpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = soap_ctrlpt.c; sourceTree = "<group>"; };
+		E9D837A7192519DA0002C09B /* soap_device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = soap_device.c; sourceTree = "<group>"; };
+		E9D837A9192519DA0002C09B /* ssdp_ctrlpt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssdp_ctrlpt.c; sourceTree = "<group>"; };
+		E9D837AA192519DA0002C09B /* ssdp_device.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssdp_device.c; sourceTree = "<group>"; };
+		E9D837AB192519DA0002C09B /* ssdp_ResultData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssdp_ResultData.h; sourceTree = "<group>"; };
+		E9D837AC192519DA0002C09B /* ssdp_server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssdp_server.c; sourceTree = "<group>"; };
+		E9D837AE192519DA0002C09B /* urlconfig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = urlconfig.c; sourceTree = "<group>"; };
+		E9D837B0192519DA0002C09B /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		E9D837B1192519DA0002C09B /* sysdep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sysdep.c; sourceTree = "<group>"; };
+		E9D837B2192519DA0002C09B /* uuid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uuid.c; sourceTree = "<group>"; };
+		E9D837B3192519DA0002C09B /* win_dll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win_dll.c; sourceTree = "<group>"; };
+		E9E298DF1937DB4C002FA048 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E9E298E21937DB4C002FA048 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E9F0B9511949F6A000247482 /* CoreDLNAResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDLNAResource.h; sourceTree = "<group>"; };
+		E9F0B9521949F6A000247482 /* CoreDLNAResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDLNAResource.m; sourceTree = "<group>"; };
+		E9F0B9551949F6D300247482 /* DLNAResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLNAResource.h; sourceTree = "<group>"; };
+		E9F0B9561949F6D300247482 /* DLNAResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLNAResource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E98A712D195B0AE00004D99B /* Frameworks */ = {
+		E91CF07E1937E5AE00F4A457 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E98A7134195B0AE00004D99B /* Foundation.framework in Frameworks */,
+				E91CF07F1937E5AE00F4A457 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E944D8EA19352ADD00875C94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E944D8EF19352ADD00875C94 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D832731924F68A0002C09B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D8327A1924F68A0002C09B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E98A7127195B0AE00004D99B = {
+		E93880B5192BC231004D265F /* XMLSupport */ = {
 			isa = PBXGroup;
 			children = (
-				E98A7135195B0AE00004D99B /* Obj-DLNA */,
-				E98A7132195B0AE00004D99B /* Frameworks */,
-				E98A7131195B0AE00004D99B /* Products */,
+				E93880B6192BC231004D265F /* GDataXMLNode.h */,
+				E93880B7192BC231004D265F /* GDataXMLNode.m */,
+			);
+			path = XMLSupport;
+			sourceTree = "<group>";
+		};
+		E944D8F019352ADD00875C94 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E944D8F119352ADD00875C94 /* Foundation.framework */,
+				E944D8F219352ADD00875C94 /* CoreData.framework */,
+				E944D8F319352ADD00875C94 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E944D8F419352ADD00875C94 /* Obj-DLNAModel */ = {
+			isa = PBXGroup;
+			children = (
+				E944D8F519352ADE00875C94 /* Supporting Files */,
+			);
+			path = "Obj-DLNAModel";
+			sourceTree = "<group>";
+		};
+		E944D8F519352ADE00875C94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E97C1CE61E038F7300A48742 /* Obj-DLNAModel-Info.plist */,
+				E97C1CE71E038F7300A48742 /* Obj-DLNAModel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E97C1CCC1E038F1C00A48742 /* upnp */ = {
+			isa = PBXGroup;
+			children = (
+				E97C1CCD1E038F1C00A48742 /* autoconfig.h */,
+				E97C1CCE1E038F1C00A48742 /* ithread.h */,
+				E97C1CCF1E038F1C00A48742 /* ixml.h */,
+				E97C1CD01E038F1C00A48742 /* LinkedList.h */,
+				E97C1CD11E038F1C00A48742 /* upnp.h */,
+				E97C1CD21E038F1C00A48742 /* upnpconfig.h */,
+				E97C1CD31E038F1C00A48742 /* upnptools.h */,
+			);
+			name = upnp;
+			path = "Obj-DLNA/upnp";
+			sourceTree = SOURCE_ROOT;
+		};
+		E9D8326D1924F68A0002C09B = {
+			isa = PBXGroup;
+			children = (
+				E9D83805192549160002C09B /* Sources */,
+				E93880B5192BC231004D265F /* XMLSupport */,
+				E9D83722192519DA0002C09B /* libupnp */,
+				E9D8327B1924F68A0002C09B /* Obj-DLNA */,
+				E944D8F419352ADD00875C94 /* Obj-DLNAModel */,
+				E9D832781924F68A0002C09B /* Frameworks */,
+				E9D832771924F68A0002C09B /* Products */,
+				E9D8327C1924F68A0002C09B /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E98A7131195B0AE00004D99B /* Products */ = {
+		E9D832771924F68A0002C09B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E98A7130195B0AE00004D99B /* libObj-DLNA.a */,
+				E9D832761924F68A0002C09B /* libObj-DLNA.a */,
+				E944D8ED19352ADD00875C94 /* Obj-DLNAModel.bundle */,
+				E91CF08A1937E5AE00F4A457 /* libObj-DLNA.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E98A7132195B0AE00004D99B /* Frameworks */ = {
+		E9D832781924F68A0002C09B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E98A7133195B0AE00004D99B /* Foundation.framework */,
+				E9D832791924F68A0002C09B /* Foundation.framework */,
+				E944D8EE19352ADD00875C94 /* Cocoa.framework */,
+				E9E298DF1937DB4C002FA048 /* XCTest.framework */,
+				E9E298E21937DB4C002FA048 /* UIKit.framework */,
+				E944D8F019352ADD00875C94 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E98A7135195B0AE00004D99B /* Obj-DLNA */ = {
+		E9D8327B1924F68A0002C09B /* Obj-DLNA */ = {
 			isa = PBXGroup;
 			children = (
-				E98A7136195B0AE00004D99B /* Supporting Files */,
+				E97C1CAF1E038F1C00A48742 /* config.h */,
+				E97C1CB01E038F1C00A48742 /* content_dir_p.h */,
+				E97C1CB11E038F1C00A48742 /* content_dir.c */,
+				E97C1CB21E038F1C00A48742 /* content_dir.h */,
+				E97C1CB31E038F1C00A48742 /* device_list.c */,
+				E97C1CB41E038F1C00A48742 /* device_list.h */,
+				E97C1CB51E038F1C00A48742 /* device.c */,
+				E97C1CB61E038F1C00A48742 /* device.h */,
+				E97C1CB71E038F1C00A48742 /* didl_object.c */,
+				E97C1CB81E038F1C00A48742 /* didl_object.h */,
+				E97C1CB91E038F1C00A48742 /* Obj-DLNA-Prefix.pch */,
+				E97C1CBA1E038F1C00A48742 /* objdlna.c */,
+				E97C1CBB1E038F1C00A48742 /* objdlna.h */,
+				E97C1CBC1E038F1C00A48742 /* log.c */,
+				E97C1CBD1E038F1C00A48742 /* log.h */,
+				E97C1CBE1E038F1C00A48742 /* object_p.h */,
+				E97C1CBF1E038F1C00A48742 /* object.c */,
+				E97C1CC01E038F1C00A48742 /* object.h */,
+				E97C1CC11E038F1C00A48742 /* ptr_array.c */,
+				E97C1CC21E038F1C00A48742 /* ptr_array.h */,
+				E97C1CC31E038F1C00A48742 /* service_p.h */,
+				E97C1CC41E038F1C00A48742 /* service.c */,
+				E97C1CC51E038F1C00A48742 /* service.h */,
+				E97C1CC61E038F1C00A48742 /* string_util.c */,
+				E97C1CC71E038F1C00A48742 /* string_util.h */,
+				E97C1CC81E038F1C00A48742 /* talloc_util.c */,
+				E97C1CC91E038F1C00A48742 /* talloc_util.h */,
+				E97C1CCA1E038F1C00A48742 /* talloc.c */,
+				E97C1CCB1E038F1C00A48742 /* talloc.h */,
+				E97C1CCC1E038F1C00A48742 /* upnp */,
+				E97C1CD41E038F1C00A48742 /* upnp_util.c */,
+				E97C1CD51E038F1C00A48742 /* upnp_util.h */,
+				E97C1CD61E038F1C00A48742 /* xml_util.c */,
+				E97C1CD71E038F1C00A48742 /* xml_util.h */,
 			);
 			path = "Obj-DLNA";
 			sourceTree = "<group>";
 		};
-		E98A7136195B0AE00004D99B /* Supporting Files */ = {
+		E9D8327C1924F68A0002C09B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E98A7137195B0AE00004D99B /* Obj-DLNA-Prefix.pch */,
+				E9D8327D1924F68A0002C09B /* Obj-DLNA-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = "Obj-DLNA";
+			sourceTree = "<group>";
+		};
+		E9D83722192519DA0002C09B /* libupnp */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8372E192519DA0002C09B /* ixml */,
+				E9D83742192519DA0002C09B /* threadutil */,
+				E9D8374E192519DA0002C09B /* upnp */,
+			);
+			path = libupnp;
+			sourceTree = "<group>";
+		};
+		E9D8372E192519DA0002C09B /* ixml */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83730192519DA0002C09B /* inc */,
+				E9D83733192519DA0002C09B /* src */,
+			);
+			path = ixml;
+			sourceTree = "<group>";
+		};
+		E9D83730192519DA0002C09B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83731192519DA0002C09B /* ixml.h */,
+				E9D83732192519DA0002C09B /* ixmldebug.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		E9D83733192519DA0002C09B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83734192519DA0002C09B /* attr.c */,
+				E9D83735192519DA0002C09B /* document.c */,
+				E9D83736192519DA0002C09B /* element.c */,
+				E9D83737192519DA0002C09B /* inc */,
+				E9D8373A192519DA0002C09B /* ixml.c */,
+				E9D8373B192519DA0002C09B /* ixmldebug.c */,
+				E9D8373C192519DA0002C09B /* ixmlmembuf.c */,
+				E9D8373D192519DA0002C09B /* ixmlparser.c */,
+				E9D8373E192519DA0002C09B /* namedNodeMap.c */,
+				E9D8373F192519DA0002C09B /* node.c */,
+				E9D83740192519DA0002C09B /* nodeList.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E9D83737192519DA0002C09B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83738192519DA0002C09B /* ixmlmembuf.h */,
+				E9D83739192519DA0002C09B /* ixmlparser.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		E9D83742192519DA0002C09B /* threadutil */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83743192519DA0002C09B /* inc */,
+				E9D83749192519DA0002C09B /* src */,
+			);
+			path = threadutil;
+			sourceTree = "<group>";
+		};
+		E9D83743192519DA0002C09B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83744192519DA0002C09B /* FreeList.h */,
+				E9D83745192519DA0002C09B /* ithread.h */,
+				E9D83746192519DA0002C09B /* LinkedList.h */,
+				E9D83747192519DA0002C09B /* ThreadPool.h */,
+				E9D83748192519DA0002C09B /* TimerThread.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		E9D83749192519DA0002C09B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8374A192519DA0002C09B /* FreeList.c */,
+				E9D8374B192519DA0002C09B /* LinkedList.c */,
+				E9D8374C192519DA0002C09B /* ThreadPool.c */,
+				E9D8374D192519DA0002C09B /* TimerThread.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E9D8374E192519DA0002C09B /* upnp */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83750192519DA0002C09B /* inc */,
+				E9D83760192519DA0002C09B /* src */,
+			);
+			path = upnp;
+			sourceTree = "<group>";
+		};
+		E9D83750192519DA0002C09B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83751192519DA0002C09B /* upnp.h */,
+				E9D83752192519DA0002C09B /* upnpconfig.h */,
+				E9D83753192519DA0002C09B /* upnpdebug.h */,
+				E9D83754192519DA0002C09B /* UpnpGlobal.h */,
+				E9D83755192519DA0002C09B /* UpnpInet.h */,
+				E9D83756192519DA0002C09B /* UpnpIntTypes.h */,
+				E9D83757192519DA0002C09B /* UpnpStdInt.h */,
+				E9D83758192519DA0002C09B /* UpnpString.h */,
+				E9D83759192519DA0002C09B /* upnptools.h */,
+				E9D8375A192519DA0002C09B /* UpnpUniStd.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		E9D83760192519DA0002C09B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83761192519DA0002C09B /* api */,
+				E9D83766192519DA0002C09B /* gena */,
+				E9D8376A192519DA0002C09B /* genlib */,
+				E9D83780192519DA0002C09B /* inc */,
+				E9D837A3192519DA0002C09B /* inet_pton.c */,
+				E9D837A4192519DA0002C09B /* soap */,
+				E9D837A8192519DA0002C09B /* ssdp */,
+				E9D837AD192519DA0002C09B /* urlconfig */,
+				E9D837AF192519DA0002C09B /* uuid */,
+				E9D837B3192519DA0002C09B /* win_dll.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		E9D83761192519DA0002C09B /* api */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83762192519DA0002C09B /* upnpapi.c */,
+				E9D83763192519DA0002C09B /* upnpdebug.c */,
+				E9D83764192519DA0002C09B /* UpnpString.c */,
+				E9D83765192519DA0002C09B /* upnptools.c */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		E9D83766192519DA0002C09B /* gena */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83767192519DA0002C09B /* gena_callback2.c */,
+				E9D83768192519DA0002C09B /* gena_ctrlpt.c */,
+				E9D83769192519DA0002C09B /* gena_device.c */,
+			);
+			path = gena;
+			sourceTree = "<group>";
+		};
+		E9D8376A192519DA0002C09B /* genlib */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8376B192519DA0002C09B /* client_table */,
+				E9D8376D192519DA0002C09B /* miniserver */,
+				E9D8376F192519DA0002C09B /* net */,
+				E9D83779192519DA0002C09B /* service_table */,
+				E9D8377B192519DA0002C09B /* util */,
+			);
+			path = genlib;
+			sourceTree = "<group>";
+		};
+		E9D8376B192519DA0002C09B /* client_table */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8376C192519DA0002C09B /* client_table.c */,
+			);
+			path = client_table;
+			sourceTree = "<group>";
+		};
+		E9D8376D192519DA0002C09B /* miniserver */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8376E192519DA0002C09B /* miniserver.c */,
+			);
+			path = miniserver;
+			sourceTree = "<group>";
+		};
+		E9D8376F192519DA0002C09B /* net */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83770192519DA0002C09B /* http */,
+				E9D83776192519DA0002C09B /* sock.c */,
+				E9D83777192519DA0002C09B /* uri */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		E9D83770192519DA0002C09B /* http */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83771192519DA0002C09B /* httpparser.c */,
+				E9D83772192519DA0002C09B /* httpreadwrite.c */,
+				E9D83773192519DA0002C09B /* parsetools.c */,
+				E9D83774192519DA0002C09B /* statcodes.c */,
+				E9D83775192519DA0002C09B /* webserver.c */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		E9D83777192519DA0002C09B /* uri */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83778192519DA0002C09B /* uri.c */,
+			);
+			path = uri;
+			sourceTree = "<group>";
+		};
+		E9D83779192519DA0002C09B /* service_table */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8377A192519DA0002C09B /* service_table.c */,
+			);
+			path = service_table;
+			sourceTree = "<group>";
+		};
+		E9D8377B192519DA0002C09B /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E9D8377C192519DA0002C09B /* membuffer.c */,
+				E9D8377D192519DA0002C09B /* strintmap.c */,
+				E9D8377E192519DA0002C09B /* upnp_timeout.c */,
+				E9D8377F192519DA0002C09B /* util.c */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E9D83780192519DA0002C09B /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E9D83781192519DA0002C09B /* autoconfig.h */,
+				E9D83782192519DA0002C09B /* client_table.h */,
+				E9D83783192519DA0002C09B /* config.h */,
+				E9D83784192519DA0002C09B /* gena.h */,
+				E9D83785192519DA0002C09B /* gena_ctrlpt.h */,
+				E9D83786192519DA0002C09B /* gena_device.h */,
+				E9D83787192519DA0002C09B /* global.h */,
+				E9D83788192519DA0002C09B /* gmtdate.h */,
+				E9D83789192519DA0002C09B /* httpparser.h */,
+				E9D8378A192519DA0002C09B /* httpreadwrite.h */,
+				E9D8378B192519DA0002C09B /* inet_pton.h */,
+				E9D8378C192519DA0002C09B /* md5.h */,
+				E9D8378D192519DA0002C09B /* membuffer.h */,
+				E9D8378E192519DA0002C09B /* miniserver.h */,
+				E9D8378F192519DA0002C09B /* netall.h */,
+				E9D83790192519DA0002C09B /* parsetools.h */,
+				E9D83791192519DA0002C09B /* server.h */,
+				E9D83792192519DA0002C09B /* service_table.h */,
+				E9D83793192519DA0002C09B /* soaplib.h */,
+				E9D83794192519DA0002C09B /* sock.h */,
+				E9D83795192519DA0002C09B /* ssdplib.h */,
+				E9D83796192519DA0002C09B /* statcodes.h */,
+				E9D83797192519DA0002C09B /* statuscodes.h */,
+				E9D83798192519DA0002C09B /* strintmap.h */,
+				E9D83799192519DA0002C09B /* sysdep.h */,
+				E9D8379A192519DA0002C09B /* unixutil.h */,
+				E9D8379B192519DA0002C09B /* upnp_timeout.h */,
+				E9D8379C192519DA0002C09B /* upnpapi.h */,
+				E9D8379D192519DA0002C09B /* upnputil.h */,
+				E9D8379E192519DA0002C09B /* uri.h */,
+				E9D8379F192519DA0002C09B /* urlconfig.h */,
+				E9D837A0192519DA0002C09B /* uuid.h */,
+				E9D837A1192519DA0002C09B /* VirtualDir.h */,
+				E9D837A2192519DA0002C09B /* webserver.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		E9D837A4192519DA0002C09B /* soap */ = {
+			isa = PBXGroup;
+			children = (
+				E9D837A5192519DA0002C09B /* soap_common.c */,
+				E9D837A6192519DA0002C09B /* soap_ctrlpt.c */,
+				E9D837A7192519DA0002C09B /* soap_device.c */,
+			);
+			path = soap;
+			sourceTree = "<group>";
+		};
+		E9D837A8192519DA0002C09B /* ssdp */ = {
+			isa = PBXGroup;
+			children = (
+				E9D837A9192519DA0002C09B /* ssdp_ctrlpt.c */,
+				E9D837AA192519DA0002C09B /* ssdp_device.c */,
+				E9D837AB192519DA0002C09B /* ssdp_ResultData.h */,
+				E9D837AC192519DA0002C09B /* ssdp_server.c */,
+			);
+			path = ssdp;
+			sourceTree = "<group>";
+		};
+		E9D837AD192519DA0002C09B /* urlconfig */ = {
+			isa = PBXGroup;
+			children = (
+				E9D837AE192519DA0002C09B /* urlconfig.c */,
+			);
+			path = urlconfig;
+			sourceTree = "<group>";
+		};
+		E9D837AF192519DA0002C09B /* uuid */ = {
+			isa = PBXGroup;
+			children = (
+				E9D837B0192519DA0002C09B /* md5.c */,
+				E9D837B1192519DA0002C09B /* sysdep.c */,
+				E9D837B2192519DA0002C09B /* uuid.c */,
+			);
+			path = uuid;
+			sourceTree = "<group>";
+		};
+		E9D83805192549160002C09B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E9598FB119265D95004CFD29 /* Obj-DLNAWrapper.h */,
+				E9598FB219265D95004CFD29 /* Obj-DLNAWrapper.m */,
+				E95AF162192697DA0043B72B /* DLNAManager.h */,
+				E94EC70F194630D9005D3870 /* DLNAManager+Private.h */,
+				E95AF163192697DA0043B72B /* DLNAManager.m */,
+				E9246A9C192B9D620048A1E0 /* DLNAModel.xcdatamodeld */,
+				E93880C0192BD21A004D265F /* CoreDLNAServer.h */,
+				E93880C1192BD21A004D265F /* CoreDLNAServer.m */,
+				E93880BA192BD050004D265F /* CoreDLNAFile.h */,
+				E93880BB192BD050004D265F /* CoreDLNAFile.m */,
+				E9F0B9511949F6A000247482 /* CoreDLNAResource.h */,
+				E9F0B9521949F6A000247482 /* CoreDLNAResource.m */,
+				E92865CF193921AB0007F536 /* DLNAServer.h */,
+				E92865D0193921AB0007F536 /* DLNAServer.m */,
+				E92865D5193921BD0007F536 /* DLNAFile.h */,
+				E92865D6193921BD0007F536 /* DLNAFile.m */,
+				E9F0B9551949F6D300247482 /* DLNAResource.h */,
+				E9F0B9561949F6D300247482 /* DLNAResource.m */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E98A712F195B0AE00004D99B /* Obj-DLNA */ = {
+		E91CF0381937E5AE00F4A457 /* Obj-DLNA Devices */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E98A7153195B0AE00004D99B /* Build configuration list for PBXNativeTarget "Obj-DLNA" */;
+			buildConfigurationList = E91CF0871937E5AE00F4A457 /* Build configuration list for PBXNativeTarget "Obj-DLNA Devices" */;
 			buildPhases = (
-				E98A712C195B0AE00004D99B /* Sources */,
-				E98A712D195B0AE00004D99B /* Frameworks */,
-				E98A712E195B0AE00004D99B /* CopyFiles */,
+				E91CF0391937E5AE00F4A457 /* Sources */,
+				E91CF07E1937E5AE00F4A457 /* Frameworks */,
+				E91CF0801937E5AE00F4A457 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Obj-DLNA Devices";
+			productName = "Obj-DLNA";
+			productReference = E91CF08A1937E5AE00F4A457 /* libObj-DLNA.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E944D8EC19352ADD00875C94 /* Obj-DLNAModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E944D8FB19352ADE00875C94 /* Build configuration list for PBXNativeTarget "Obj-DLNAModel" */;
+			buildPhases = (
+				E944D8E919352ADD00875C94 /* Sources */,
+				E944D8EA19352ADD00875C94 /* Frameworks */,
+				E944D8EB19352ADD00875C94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Obj-DLNAModel";
+			productName = "Obj-DLNAModel";
+			productReference = E944D8ED19352ADD00875C94 /* Obj-DLNAModel.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E9D832751924F68A0002C09B /* Obj-DLNA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9D832991924F68A0002C09B /* Build configuration list for PBXNativeTarget "Obj-DLNA" */;
+			buildPhases = (
+				E9D832721924F68A0002C09B /* Sources */,
+				E9D832731924F68A0002C09B /* Frameworks */,
+				E9D832741924F68A0002C09B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -98,132 +904,398 @@
 			);
 			name = "Obj-DLNA";
 			productName = "Obj-DLNA";
-			productReference = E98A7130195B0AE00004D99B /* libObj-DLNA.a */;
+			productReference = E9D832761924F68A0002C09B /* libObj-DLNA.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E98A7128195B0AE00004D99B /* Project object */ = {
+		E9D8326E1924F68A0002C09B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Roadrunner;
 			};
-			buildConfigurationList = E98A712B195B0AE00004D99B /* Build configuration list for PBXProject "Obj-DLNA" */;
+			buildConfigurationList = E9D832711924F68A0002C09B /* Build configuration list for PBXProject "Obj-DLNA" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = E98A7127195B0AE00004D99B;
-			productRefGroup = E98A7131195B0AE00004D99B /* Products */;
+			mainGroup = E9D8326D1924F68A0002C09B;
+			productRefGroup = E9D832771924F68A0002C09B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E98A712F195B0AE00004D99B /* Obj-DLNA */,
+				E9D832751924F68A0002C09B /* Obj-DLNA */,
+				E944D8EC19352ADD00875C94 /* Obj-DLNAModel */,
+				E91CF0381937E5AE00F4A457 /* Obj-DLNA Devices */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E944D8EB19352ADD00875C94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		E98A712C195B0AE00004D99B /* Sources */ = {
+		E91CF0391937E5AE00F4A457 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91CF03B1937E5AE00F4A457 /* httpparser.c in Sources */,
+				E91CF03C1937E5AE00F4A457 /* sysdep.c in Sources */,
+				E91CF03D1937E5AE00F4A457 /* element.c in Sources */,
+				E91CF03E1937E5AE00F4A457 /* win_dll.c in Sources */,
+				E91CF03F1937E5AE00F4A457 /* miniserver.c in Sources */,
+				E91CF0411937E5AE00F4A457 /* nodeList.c in Sources */,
+				E91CF0431937E5AE00F4A457 /* md5.c in Sources */,
+				E91CF0441937E5AE00F4A457 /* UpnpString.c in Sources */,
+				E91CF0451937E5AE00F4A457 /* ixmlparser.c in Sources */,
+				E91CF0461937E5AE00F4A457 /* httpreadwrite.c in Sources */,
+				E91CF0471937E5AE00F4A457 /* uuid.c in Sources */,
+				E91CF0491937E5AE00F4A457 /* sock.c in Sources */,
+				E9F0B9581949F6D300247482 /* DLNAResource.m in Sources */,
+				E91CF04B1937E5AE00F4A457 /* util.c in Sources */,
+				E91CF04C1937E5AE00F4A457 /* ssdp_ctrlpt.c in Sources */,
+				E91CF04F1937E5AE00F4A457 /* membuffer.c in Sources */,
+				E92865DA193921BD0007F536 /* DLNAFile.m in Sources */,
+				E91CF0501937E5AE00F4A457 /* statcodes.c in Sources */,
+				E91CF0511937E5AE00F4A457 /* ixml.c in Sources */,
+				E91CF0521937E5AE00F4A457 /* ixmlmembuf.c in Sources */,
+				E91CF0531937E5AE00F4A457 /* urlconfig.c in Sources */,
+				E91CF0541937E5AE00F4A457 /* namedNodeMap.c in Sources */,
+				E91CF0561937E5AE00F4A457 /* CoreDLNAServer.m in Sources */,
+				E91CF0571937E5AE00F4A457 /* ssdp_server.c in Sources */,
+				E91CF0581937E5AE00F4A457 /* node.c in Sources */,
+				E91CF0591937E5AE00F4A457 /* attr.c in Sources */,
+				E91CF05B1937E5AE00F4A457 /* strintmap.c in Sources */,
+				E91CF05C1937E5AE00F4A457 /* CoreDLNAFile.m in Sources */,
+				E91CF05D1937E5AE00F4A457 /* FreeList.c in Sources */,
+				E91CF05E1937E5AE00F4A457 /* soap_ctrlpt.c in Sources */,
+				E91CF05F1937E5AE00F4A457 /* Obj-DLNAWrapper.m in Sources */,
+				E91CF0601937E5AE00F4A457 /* upnpdebug.c in Sources */,
+				E91CF0611937E5AE00F4A457 /* uri.c in Sources */,
+				E91CF0621937E5AE00F4A457 /* LinkedList.c in Sources */,
+				E92865D4193921AB0007F536 /* DLNAServer.m in Sources */,
+				E91CF0631937E5AE00F4A457 /* document.c in Sources */,
+				E91CF0641937E5AE00F4A457 /* inet_pton.c in Sources */,
+				E9F0B9541949F6A000247482 /* CoreDLNAResource.m in Sources */,
+				E91CF0651937E5AE00F4A457 /* client_table.c in Sources */,
+				E91CF0661937E5AE00F4A457 /* gena_device.c in Sources */,
+				E91CF0671937E5AE00F4A457 /* gena_callback2.c in Sources */,
+				E91CF0681937E5AE00F4A457 /* webserver.c in Sources */,
+				E91CF06C1937E5AE00F4A457 /* ssdp_device.c in Sources */,
+				E91CF06D1937E5AE00F4A457 /* upnpapi.c in Sources */,
+				E91CF06E1937E5AE00F4A457 /* parsetools.c in Sources */,
+				E91CF0711937E5AE00F4A457 /* upnp_timeout.c in Sources */,
+				E91CF0721937E5AE00F4A457 /* TimerThread.c in Sources */,
+				E91CF0731937E5AE00F4A457 /* service_table.c in Sources */,
+				E91CF0741937E5AE00F4A457 /* DLNAManager.m in Sources */,
+				E91CF0761937E5AE00F4A457 /* soap_device.c in Sources */,
+				E91CF0791937E5AE00F4A457 /* ixmldebug.c in Sources */,
+				E91CF07A1937E5AE00F4A457 /* ThreadPool.c in Sources */,
+				E91CF07B1937E5AE00F4A457 /* upnptools.c in Sources */,
+				E91CF07C1937E5AE00F4A457 /* gena_ctrlpt.c in Sources */,
+				E91CF07D1937E5AE00F4A457 /* soap_common.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E944D8E919352ADD00875C94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E944D8FE19352AE500875C94 /* DLNAModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D832721924F68A0002C09B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D837CC192519DA0002C09B /* httpparser.c in Sources */,
+				E9D837E1192519DA0002C09B /* sysdep.c in Sources */,
+				E9D837B7192519DA0002C09B /* element.c in Sources */,
+				E97C1CDB1E038F1C00A48742 /* didl_object.c in Sources */,
+				E9D837E3192519DA0002C09B /* win_dll.c in Sources */,
+				E9D837CB192519DA0002C09B /* miniserver.c in Sources */,
+				E9D837BE192519DA0002C09B /* nodeList.c in Sources */,
+				E9D837E0192519DA0002C09B /* md5.c in Sources */,
+				E9D837C5192519DA0002C09B /* UpnpString.c in Sources */,
+				E9D837BB192519DA0002C09B /* ixmlparser.c in Sources */,
+				E9D837CD192519DA0002C09B /* httpreadwrite.c in Sources */,
+				E97C1CE01E038F1C00A48742 /* service.c in Sources */,
+				E9D837E2192519DA0002C09B /* uuid.c in Sources */,
+				E9D837D1192519DA0002C09B /* sock.c in Sources */,
+				E9F0B9571949F6D300247482 /* DLNAResource.m in Sources */,
+				E97C1CE31E038F1C00A48742 /* talloc.c in Sources */,
+				E9D837D7192519DA0002C09B /* util.c in Sources */,
+				E9D837DC192519DA0002C09B /* ssdp_ctrlpt.c in Sources */,
+				E9D837D4192519DA0002C09B /* membuffer.c in Sources */,
+				E92865D9193921BD0007F536 /* DLNAFile.m in Sources */,
+				E9D837CF192519DA0002C09B /* statcodes.c in Sources */,
+				E9D837B8192519DA0002C09B /* ixml.c in Sources */,
+				E9D837BA192519DA0002C09B /* ixmlmembuf.c in Sources */,
+				E97C1CDD1E038F1C00A48742 /* log.c in Sources */,
+				E9D837DF192519DA0002C09B /* urlconfig.c in Sources */,
+				E9D837BC192519DA0002C09B /* namedNodeMap.c in Sources */,
+				E93880C3192BD21A004D265F /* CoreDLNAServer.m in Sources */,
+				E9D837DE192519DA0002C09B /* ssdp_server.c in Sources */,
+				E97C1CE41E038F1C00A48742 /* upnp_util.c in Sources */,
+				E9D837BD192519DA0002C09B /* node.c in Sources */,
+				E9D837B5192519DA0002C09B /* attr.c in Sources */,
+				E97C1CDC1E038F1C00A48742 /* objdlna.c in Sources */,
+				E9D837D5192519DA0002C09B /* strintmap.c in Sources */,
+				E97C1CDE1E038F1C00A48742 /* object.c in Sources */,
+				E93880BD192BD050004D265F /* CoreDLNAFile.m in Sources */,
+				E9D837BF192519DA0002C09B /* FreeList.c in Sources */,
+				E9D837DA192519DA0002C09B /* soap_ctrlpt.c in Sources */,
+				E9598FB419265D95004CFD29 /* Obj-DLNAWrapper.m in Sources */,
+				E97C1CD81E038F1C00A48742 /* content_dir.c in Sources */,
+				E9D837C4192519DA0002C09B /* upnpdebug.c in Sources */,
+				E97C1CD91E038F1C00A48742 /* device_list.c in Sources */,
+				E9D837D2192519DA0002C09B /* uri.c in Sources */,
+				E9D837C0192519DA0002C09B /* LinkedList.c in Sources */,
+				E92865D3193921AB0007F536 /* DLNAServer.m in Sources */,
+				E97C1CDF1E038F1C00A48742 /* ptr_array.c in Sources */,
+				E9D837B6192519DA0002C09B /* document.c in Sources */,
+				E9D837D8192519DA0002C09B /* inet_pton.c in Sources */,
+				E97C1CDA1E038F1C00A48742 /* device.c in Sources */,
+				E9F0B9531949F6A000247482 /* CoreDLNAResource.m in Sources */,
+				E9D837CA192519DA0002C09B /* client_table.c in Sources */,
+				E9D837C9192519DA0002C09B /* gena_device.c in Sources */,
+				E9D837C7192519DA0002C09B /* gena_callback2.c in Sources */,
+				E9D837D0192519DA0002C09B /* webserver.c in Sources */,
+				E9D837DD192519DA0002C09B /* ssdp_device.c in Sources */,
+				E9D837C3192519DA0002C09B /* upnpapi.c in Sources */,
+				E9D837CE192519DA0002C09B /* parsetools.c in Sources */,
+				E9D837D6192519DA0002C09B /* upnp_timeout.c in Sources */,
+				E9D837C2192519DA0002C09B /* TimerThread.c in Sources */,
+				E9D837D3192519DA0002C09B /* service_table.c in Sources */,
+				E95AF165192697DA0043B72B /* DLNAManager.m in Sources */,
+				E9D837DB192519DA0002C09B /* soap_device.c in Sources */,
+				E9D837B9192519DA0002C09B /* ixmldebug.c in Sources */,
+				E9D837C1192519DA0002C09B /* ThreadPool.c in Sources */,
+				E9D837C6192519DA0002C09B /* upnptools.c in Sources */,
+				E97C1CE21E038F1C00A48742 /* talloc_util.c in Sources */,
+				E9D837C8192519DA0002C09B /* gena_ctrlpt.c in Sources */,
+				E9D837D9192519DA0002C09B /* soap_common.c in Sources */,
+				E97C1CE11E038F1C00A48742 /* string_util.c in Sources */,
+				E97C1CE51E038F1C00A48742 /* xml_util.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E98A7151195B0AE00004D99B /* Debug */ = {
+		E91CF0881937E5AE00F4A457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/Obj-DLNA.dst";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Obj-DLNA/Obj-DLNA-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"NETINTERFACES_WIFI_C_VERSION=\\\"en0\\\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Obj-DLNA";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E91CF0891937E5AE00F4A457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = "/tmp/Obj-DLNA.dst";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Obj-DLNA/Obj-DLNA-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"NETINTERFACES_WIFI_C_VERSION=\\\"en0\\\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "Obj-DLNA";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E944D8FC19352ADE00875C94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Obj-DLNAModel/Obj-DLNAModel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Obj-DLNAModel/Obj-DLNAModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roadrunner.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E944D8FD19352ADE00875C94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Obj-DLNAModel/Obj-DLNAModel-Prefix.pch";
+				INFOPLIST_FILE = "Obj-DLNAModel/Obj-DLNAModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roadrunner.${PRODUCT_NAME}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E9D832971924F68A0002C09B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
-		E98A7152195B0AE00004D99B /* Release */ = {
+		E9D832981924F68A0002C09B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "i386 x86_64 armv7 armv7s arm64";
 			};
 			name = Release;
 		};
-		E98A7154195B0AE00004D99B /* Debug */ = {
+		E9D8329A1924F68A0002C09B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/Obj_DLNA.dst;
+				DSTROOT = "/tmp/Obj-DLNA.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Obj-DLNA/Obj-DLNA-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"NETINTERFACES_WIFI_C_VERSION=\\\"en1\\\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		E98A7155195B0AE00004D99B /* Release */ = {
+		E9D8329B1924F68A0002C09B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/Obj_DLNA.dst;
+				DSTROOT = "/tmp/Obj-DLNA.dst";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Obj-DLNA/Obj-DLNA-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"NETINTERFACES_WIFI_C_VERSION=\\\"en1\\\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -233,25 +1305,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E98A712B195B0AE00004D99B /* Build configuration list for PBXProject "Obj-DLNA" */ = {
+		E91CF0871937E5AE00F4A457 /* Build configuration list for PBXNativeTarget "Obj-DLNA Devices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E98A7151195B0AE00004D99B /* Debug */,
-				E98A7152195B0AE00004D99B /* Release */,
+				E91CF0881937E5AE00F4A457 /* Debug */,
+				E91CF0891937E5AE00F4A457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E98A7153195B0AE00004D99B /* Build configuration list for PBXNativeTarget "Obj-DLNA" */ = {
+		E944D8FB19352ADE00875C94 /* Build configuration list for PBXNativeTarget "Obj-DLNAModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E98A7154195B0AE00004D99B /* Debug */,
-				E98A7155195B0AE00004D99B /* Release */,
+				E944D8FC19352ADE00875C94 /* Debug */,
+				E944D8FD19352ADE00875C94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D832711924F68A0002C09B /* Build configuration list for PBXProject "Obj-DLNA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D832971924F68A0002C09B /* Debug */,
+				E9D832981924F68A0002C09B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9D832991924F68A0002C09B /* Build configuration list for PBXNativeTarget "Obj-DLNA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9D8329A1924F68A0002C09B /* Debug */,
+				E9D8329B1924F68A0002C09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E9246A9C192B9D620048A1E0 /* DLNAModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E9246A9D192B9D620048A1E0 /* DLNAModel.xcdatamodel */,
+			);
+			currentVersion = E9246A9D192B9D620048A1E0 /* DLNAModel.xcdatamodel */;
+			path = DLNAModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = E98A7128195B0AE00004D99B /* Project object */;
+	rootObject = E9D8326E1924F68A0002C09B /* Project object */;
 }

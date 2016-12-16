@@ -1,6 +1,6 @@
 #import "Obj-DLNAWrapper.h"
 
-#include "obj-dlna.h"
+#include "objdlna.h"
 
 static dispatch_once_t onceToken;
 static dispatch_semaphore_t sema;

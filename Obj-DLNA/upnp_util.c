@@ -34,7 +34,7 @@
 #include "xml_util.h"
 #include "talloc_util.h"
 
-
+#include <string.h>
 
 
 /*****************************************************************************

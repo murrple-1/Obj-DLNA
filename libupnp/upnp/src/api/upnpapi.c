@@ -3859,8 +3859,8 @@ int getlocalhostname(char *out, size_t out_len)
 			continue;
 		}
 		//On the iphone we are only interested in the wifi interface for upnp-av functionality
-		//This wifi interface is AX_NETINTERFACES_WIFI_C_VERSION so we specifically look for that
-		if ( strcmp( ifa->ifa_name, AX_NETINTERFACES_WIFI_C_VERSION ) != 0 )
+		//This wifi interface is NETINTERFACES_WIFI_C_VERSION so we specifically look for that
+		if ( strcmp( ifa->ifa_name, NETINTERFACES_WIFI_C_VERSION ) != 0 )
 			continue;
 		if (ifa->ifa_addr->sa_family == AF_INET) {
 			/* We don't want the loopback interface. */
